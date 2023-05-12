@@ -5,6 +5,10 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClickCart", "ClickCart\ClickCart.csproj", "{AAAD8477-21B6-4EA6-856C-E95A3685CF68}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{56DE078A-CD8C-47B8-A108-4D8E6EC8A997}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{B4FBC7B2-ED7D-4465-AB29-D5B3C5BB64BE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{AAAD8477-21B6-4EA6-856C-E95A3685CF68}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AAAD8477-21B6-4EA6-856C-E95A3685CF68}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AAAD8477-21B6-4EA6-856C-E95A3685CF68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{56DE078A-CD8C-47B8-A108-4D8E6EC8A997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56DE078A-CD8C-47B8-A108-4D8E6EC8A997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56DE078A-CD8C-47B8-A108-4D8E6EC8A997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56DE078A-CD8C-47B8-A108-4D8E6EC8A997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4FBC7B2-ED7D-4465-AB29-D5B3C5BB64BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4FBC7B2-ED7D-4465-AB29-D5B3C5BB64BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4FBC7B2-ED7D-4465-AB29-D5B3C5BB64BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4FBC7B2-ED7D-4465-AB29-D5B3C5BB64BE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
