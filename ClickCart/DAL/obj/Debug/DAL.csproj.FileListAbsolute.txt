@@ -1,0 +1,14 @@
+E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\bin\Debug\DAL.dll.config
+E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\bin\Debug\DAL.dll
+E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\bin\Debug\DAL.pdb
+E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\bin\Debug\EntityFramework.dll
+E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\bin\Debug\EntityFramework.SqlServer.dll
+E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\bin\Debug\EntityFramework.xml
+E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\bin\Debug\EntityFramework.SqlServer.xml
+E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\obj\Debug\DAL.csproj.AssemblyReference.cache
+E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\obj\Debug\DAL.csproj.CopyComplete
+E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\obj\Debug\DAL.dll
+E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\obj\Debug\DAL.pdb
+E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\obj\Debug\DAL.Migrations.intiDB.resources
+E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\obj\Debug\DAL.csproj.GenerateResource.cache

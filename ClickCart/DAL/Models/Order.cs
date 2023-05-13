@@ -28,7 +28,7 @@ namespace DAL.Models
         public string DeliveryBy { get; set; }
 
         public virtual User User { get; set; }
-        public virtual Supplier Supplier { get; set; }
+        public virtual Shipper Shipper { get; set; }
 
 
         public virtual ICollection<OrderDetail> OrderDetails { get; set; }
