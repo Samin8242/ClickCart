@@ -8,35 +8,35 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class UserRepo : Repo, IRepo<User, string, User>
+    internal class CartRepo : Repo, IRepo<Cart, int, Cart>
     {
-        public User Create(User obj)
+        public Cart Create(Cart obj)
         {
-            db.Users.Add(obj);
+            db.Carts.Add(obj);
             if (db.SaveChanges() > 0) return obj;
             return null;
         }
 
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             var ex = Read(id);
-            db.Users.Remove(ex);
+            db.Carts.Remove(ex);
             return db.SaveChanges() > 0;
         }
 
-        public List<User> Read()
+        public List<Cart> Read()
         {
-            return db.Users.ToList();
+            return db.Carts.ToList();
         }
 
-        public User Read(string id)
+        public Cart Read(int id)
         {
-            return db.Users.Find(id);
+            return db.Carts.Find(id);
         }
 
-        public User Update(User obj)
+        public Cart Update(Cart obj)
         {
-            var ex = Read(obj.Username);
+            var ex = Read(obj.Id);
             db.Entry(ex).CurrentValues.SetValues(obj);
             if (db.SaveChanges() > 0) return obj;
             return null;

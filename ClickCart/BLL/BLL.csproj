@@ -42,6 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DTOs\CartDTO.cs" />
+    <Compile Include="DTOs\CartItemDTO.cs" />
+    <Compile Include="DTOs\CategoryDTO.cs" />
+    <Compile Include="DTOs\DiscountDTO.cs" />
+    <Compile Include="DTOs\Order.cs" />
+    <Compile Include="DTOs\UserDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

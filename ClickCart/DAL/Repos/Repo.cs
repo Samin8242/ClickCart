@@ -8,5 +8,10 @@ namespace DAL.Repos
 {
     internal class Repo
     {
+        internal CCContext db;
+        internal Repo()
+        {
+            db = new CCContext();
+        }
     }
 }

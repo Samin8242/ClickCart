@@ -8,35 +8,35 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class UserRepo : Repo, IRepo<User, string, User>
+    internal class WishListRepo : Repo, IRepo<WishList, int, WishList>
     {
-        public User Create(User obj)
+        public WishList Create(WishList obj)
         {
-            db.Users.Add(obj);
+            db.WishLists.Add(obj);
             if (db.SaveChanges() > 0) return obj;
             return null;
         }
 
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             var ex = Read(id);
-            db.Users.Remove(ex);
+            db.WishLists.Remove(ex);
             return db.SaveChanges() > 0;
         }
 
-        public List<User> Read()
+        public List<WishList> Read()
         {
-            return db.Users.ToList();
+            return db.WishLists.ToList();
         }
 
-        public User Read(string id)
+        public WishList Read(int id)
         {
-            return db.Users.Find(id);
+            return db.WishLists.Find(id);
         }
 
-        public User Update(User obj)
+        public WishList Update(WishList obj)
         {
-            var ex = Read(obj.Username);
+            var ex = Read(obj.Id);
             db.Entry(ex).CurrentValues.SetValues(obj);
             if (db.SaveChanges() > 0) return obj;
             return null;

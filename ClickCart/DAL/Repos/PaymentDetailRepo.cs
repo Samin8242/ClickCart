@@ -8,35 +8,35 @@ using System.Threading.Tasks;
 
 namespace DAL.Repos
 {
-    internal class UserRepo : Repo, IRepo<User, string, User>
+    internal class PaymentDetailRepo : Repo, IRepo<PaymentDetail, int, PaymentDetail>
     {
-        public User Create(User obj)
+        public PaymentDetail Create(PaymentDetail obj)
         {
-            db.Users.Add(obj);
+            db.PaymentDetails.Add(obj);
             if (db.SaveChanges() > 0) return obj;
             return null;
         }
 
-        public bool Delete(string id)
+        public bool Delete(int id)
         {
             var ex = Read(id);
-            db.Users.Remove(ex);
+            db.PaymentDetails.Remove(ex);
             return db.SaveChanges() > 0;
         }
 
-        public List<User> Read()
+        public List<PaymentDetail> Read()
         {
-            return db.Users.ToList();
+            return db.PaymentDetails.ToList();
         }
 
-        public User Read(string id)
+        public PaymentDetail Read(int id)
         {
-            return db.Users.Find(id);
+            return db.PaymentDetails.Find(id);
         }
 
-        public User Update(User obj)
+        public PaymentDetail Update(PaymentDetail obj)
         {
-            var ex = Read(obj.Username);
+            var ex = Read(obj.Id);
             db.Entry(ex).CurrentValues.SetValues(obj);
             if (db.SaveChanges() > 0) return obj;
             return null;
