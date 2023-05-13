@@ -12,3 +12,4 @@ E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\obj\Debug\DAL.d
 E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\obj\Debug\DAL.pdb
 E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\obj\Debug\DAL.Migrations.intiDB.resources
 E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\obj\Debug\DAL.csproj.GenerateResource.cache
+E:\10th semester\DOT NET\Dot net project\ClickCart\ClickCart\DAL\obj\Debug\DAL.Migrations.TokenTableAdded.resources

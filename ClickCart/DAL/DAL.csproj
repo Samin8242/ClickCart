@@ -53,10 +53,15 @@
   <ItemGroup>
     <Compile Include="CCContext.cs" />
     <Compile Include="DataAccessFactory.cs" />
+    <Compile Include="Interfaces\IAuth.cs" />
     <Compile Include="Interfaces\IRepo.cs" />
     <Compile Include="Migrations\202305130824114_intiDB.cs" />
     <Compile Include="Migrations\202305130824114_intiDB.designer.cs">
       <DependentUpon>202305130824114_intiDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202305131533318_TokenTableAdded.cs" />
+    <Compile Include="Migrations\202305131533318_TokenTableAdded.designer.cs">
+      <DependentUpon>202305131533318_TokenTableAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\CartItem.cs" />
@@ -70,6 +75,7 @@
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\Supplier.cs" />
     <Compile Include="Models\Shipper.cs" />
+    <Compile Include="Models\Token.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Models\WishList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -85,6 +91,7 @@
     <Compile Include="Repos\ReviewRepo.cs" />
     <Compile Include="Repos\ShipperRepo.cs" />
     <Compile Include="Repos\SupplierRepo.cs" />
+    <Compile Include="Repos\TokenRepo.cs" />
     <Compile Include="Repos\UserRepo.cs" />
     <Compile Include="Repos\WishListRepo.cs" />
   </ItemGroup>
@@ -95,6 +102,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202305130824114_intiDB.resx">
       <DependentUpon>202305130824114_intiDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202305131533318_TokenTableAdded.resx">
+      <DependentUpon>202305131533318_TokenTableAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

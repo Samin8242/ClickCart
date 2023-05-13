@@ -23,6 +23,7 @@ namespace DAL
         public DbSet<CartItem> CartItems { get; set; }
         public DbSet<Discount> Discounts { get; set; }
         public DbSet<PaymentDetail> PaymentDetails { get; set; }
+        public DbSet <Token> Tokens { get; set; }
 
 
     }

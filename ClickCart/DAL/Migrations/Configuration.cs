@@ -15,7 +15,7 @@
 
         protected override void Seed(DAL.CCContext context)
         {
-
+            /*
             Random random = new Random();
 
             
@@ -255,7 +255,7 @@
                 });
             }
 
-
+            */
 
 
             
