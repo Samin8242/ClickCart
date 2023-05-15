@@ -70,7 +70,7 @@
     <Compile Include="Services\PaymentDetailService.cs" />
     <Compile Include="Services\ProductService.cs" />
     <Compile Include="Services\ReviewService.cs" />
-    <Compile Include="Services\ShipperServices.cs" />
+    <Compile Include="Services\ShipperService.cs" />
     <Compile Include="Services\SupplierService.cs" />
     <Compile Include="Services\UserService.cs" />
     <Compile Include="Services\WishListService.cs" />

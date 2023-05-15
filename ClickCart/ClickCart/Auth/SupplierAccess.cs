@@ -7,5 +7,6 @@ namespace ClickCart.Auth
 {
     public class SupplierAccess
     {
+
     }
 }
