@@ -81,5 +81,18 @@ namespace BLL.Services
             return mapped;
 
         }
+
+        public static ProductWishDTO GetwithWishLists(int id)
+        {
+            var data = DataAccessFactory.ProductData().Read(id);
+            var cfg = new MapperConfiguration(c => {
+                c.CreateMap<Product, ProductWishDTO>();
+                c.CreateMap<WishList, WishListDTO>();
+            });
+            var mapper = new Mapper(cfg);
+            var mapped = mapper.Map<ProductWishDTO>(data);
+            return mapped;
+
+        }
     }
 }

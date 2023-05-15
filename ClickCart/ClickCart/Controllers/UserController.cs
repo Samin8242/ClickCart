@@ -90,6 +90,19 @@ namespace ClickCart.Controllers
             }
         }
 
-       
+        [HttpGet]
+        [Route("api/User/{username}/paymentdetails")]
+        public HttpResponseMessage UserPayment(string username)
+        {
+            try
+            {
+                var data = UserService.GetwithPaymentDetails(username);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+            }
+        }
     }
 }

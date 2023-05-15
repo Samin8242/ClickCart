@@ -71,7 +71,18 @@ namespace BLL.Services
         }
 
 
+        public static UserPaymentDTO GetwithPaymentDetails(string username)
+        {
+            var data = DataAccessFactory.UserData().Read(username);
+            var cfg = new MapperConfiguration(c => {
+                c.CreateMap<User, UserPaymentDTO>();
+                c.CreateMap<PaymentDetail, PaymentDetailDTO>();
+            });
+            var mapper = new Mapper(cfg);
+            var mapped = mapper.Map<UserPaymentDTO>(data);
+            return mapped;
 
+        }
 
 
 

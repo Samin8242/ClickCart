@@ -10,15 +10,15 @@ using System.Web.Http;
 
 namespace ClickCart.Controllers
 {
-    public class ProductController : ApiController
+    public class OrderController : ApiController
     {
         [HttpGet]
-        [Route("api/allproduct")]
-        public HttpResponseMessage Product()
+        [Route("api/allorder")]
+        public HttpResponseMessage Order()
         {
             try
             {
-                var data = ProductService.GetProduct();
+                var data = OrderService.GetOrder();
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
@@ -26,14 +26,14 @@ namespace ClickCart.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Massage = ex.Message });
             }
         }
-        
+
         [HttpGet]
-        [Route("api/product/{id}")]
-        public HttpResponseMessage GetProduct(int id)
+        [Route("api/order/{id}")]
+        public HttpResponseMessage GetOrder(int id)
         {
             try
             {
-                var data = ProductService.GetProduct(id);
+                var data = OrderService.GetOrder(id);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
@@ -45,12 +45,12 @@ namespace ClickCart.Controllers
 
 
         [HttpPost]
-        [Route("api/product/add")]
-        public HttpResponseMessage AddProduct(ProductDTO product)
+        [Route("api/order/add")]
+        public HttpResponseMessage AddOrder(OrderDTO order)
         {
             try
             {
-                var data = ProductService.Create(product);
+                var data = OrderService.Create(order);
                 return Request.CreateResponse(HttpStatusCode.OK, "Product has been added");
             }
             catch (Exception ex)
@@ -60,12 +60,12 @@ namespace ClickCart.Controllers
         }
 
         [HttpPost]
-        [Route("api/product/Update/{id}")]
-        public HttpResponseMessage UpdateProduct(Product product)
+        [Route("api/order/Update/{id}")]
+        public HttpResponseMessage UpdateOrder(Order order)
         {
             try
             {
-                var data = ProductService.Update(product);
+                var data = OrderService.Update(order);
                 return Request.CreateResponse(HttpStatusCode.OK, data);
             }
             catch (Exception ex)
@@ -75,12 +75,12 @@ namespace ClickCart.Controllers
         }
 
         [HttpPost]
-        [Route("api/product/delete/{id}")]
-        public HttpResponseMessage DeleteProduct(int id)
+        [Route("api/order/delete/{id}")]
+        public HttpResponseMessage DeleteOrder(int id)
         {
             try
             {
-                var data = ProductService.Delete(id);
+                var data = OrderService.Delete(id);
                 return Request.CreateResponse(HttpStatusCode.NotFound, "Product has been deleted.");
             }
             catch (Exception ex)
@@ -89,36 +89,5 @@ namespace ClickCart.Controllers
             }
         }
 
-
-
-        [HttpGet]
-        [Route("api/Product/{id}/Review")]
-        public HttpResponseMessage ProductReview(int id)
-        {
-            try
-            {
-                var data = ProductService.GetwithReviews(id);
-                return Request.CreateResponse(HttpStatusCode.OK, data);
-            }
-            catch (Exception ex)
-            {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
-            }
-        }
-
-        [HttpGet]
-        [Route("api/Product/{id}/Wishlist")]
-        public HttpResponseMessage ProductWish(int id)
-        {
-            try
-            {
-                var data = ProductService.GetwithWishLists(id);
-                return Request.CreateResponse(HttpStatusCode.OK, data);
-            }
-            catch (Exception ex)
-            {
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
-            }
-        }
     }
 }
