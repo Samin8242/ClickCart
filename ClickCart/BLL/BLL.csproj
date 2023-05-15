@@ -53,6 +53,7 @@
     <Compile Include="DTOs\OrderDetailDTO.cs" />
     <Compile Include="DTOs\PaymentDetailDTO.cs" />
     <Compile Include="DTOs\ProductDTO.cs" />
+    <Compile Include="DTOs\ProductOrderDetailDTO.cs" />
     <Compile Include="DTOs\ProductReviewDTO.cs" />
     <Compile Include="DTOs\ProductWishDTO.cs" />
     <Compile Include="DTOs\ReviewDTO.cs" />

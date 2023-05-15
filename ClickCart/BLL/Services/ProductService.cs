@@ -94,5 +94,18 @@ namespace BLL.Services
             return mapped;
 
         }
+
+        public static ProductOrderDetailDTO GetwithProductOrderDetails(int id)
+        {
+            var data = DataAccessFactory.ProductData().Read(id);
+            var cfg = new MapperConfiguration(c => {
+                c.CreateMap<Product, ProductOrderDetailDTO>();
+                c.CreateMap<OrderDetail, OrderDetailDTO>();
+            });
+            var mapper = new Mapper(cfg);
+            var mapped = mapper.Map<ProductOrderDetailDTO>(data);
+            return mapped;
+
+        }
     }
 }

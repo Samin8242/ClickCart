@@ -120,5 +120,20 @@ namespace ClickCart.Controllers
                 return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
             }
         }
+
+        [HttpGet]
+        [Route("api/Product/{id}/od")]
+        public HttpResponseMessage ProducdOD(int id)
+        {
+            try
+            {
+                var data = ProductService.GetwithProductOrderDetails(id);
+                return Request.CreateResponse(HttpStatusCode.OK, data);
+            }
+            catch (Exception ex)
+            {
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, new { Message = ex.Message });
+            }
+        }
     }
 }
